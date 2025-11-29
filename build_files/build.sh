@@ -8,7 +8,7 @@ dnf5 -y copr enable scottames/ghostty
 dnf5 -y copr enable sdegler/hyprland 
 dnf5 -y cope enable terjeros/eza 
 dnf5 -y copr enable avengemedia/dms-git 
-dnf5 -y copr enable enable yalter/niri-git
+dnf5 -y copr enable yalter/niri-git
 dnf5 -y copr enable tofik/nwg-shell
 
 # Install extra packages
