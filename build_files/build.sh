@@ -24,24 +24,3 @@ dnf5 -y install cliphist hyprland hyprpicker niri swww mako waybar waypaper blue
 curl -o - https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo | sudo tee /etc/yum.repos.d/razer.repo
 dnf5 -y install openrazer-meta
 
-# Add akmod signing
-git clone https://github.com/CheariX/silverblue-akmods-keys && cd "$(basename "$_" .git)"
-mkdir -p /root/rpmbuild/SOURCES/
-cp \
-  macros.kmodtool \
-  /etc/pki/akmods/private/private_key.priv \
-  /etc/pki/akmods/certs/public_key.der \
-  /root/rpmbuild/SOURCES
-rpmbuild -ba akmods-keys.spec
-mv /root/rpmbuild/RPMS/noarch/akmods-keys-0.0.2-8.fc$(rpm -E %fedora).noarch.rpm .
-rm -f $(find /root/rpmbuild -type f | grep -E 'akmods-keys|public_key.der|private_key.priv|macros.kmodtool')
-find /root/rpmbuild -type d | sort -r | while read d; do
-  rm -df "$d" 2>/dev/null
-done
-dnf5 -y install akmods-keys-0.0.2-8.fc$(rpm -E %fedora).noarch.rpm
-
-groupadd plugdev
-#usermod -aG plugdev $USER
-
-
-# Akmod signing stuff for secure boot and openrazer
