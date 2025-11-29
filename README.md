@@ -1,6 +1,6 @@
 # Playground to test custom image builds.
 Hyprland and Niri along with needed support packages.
-Check /build_files/build.sh for the package details.
+Check   /build_files/build.sh   for the package details.
 Everything else based on the Ublue Silverblue:latest image.
 
 
