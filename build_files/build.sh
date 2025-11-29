@@ -6,10 +6,13 @@
 dnf5 -y copr enable cyqsimon/bat-extras 
 dnf5 -y copr enable scottames/ghostty
 dnf5 -y copr enable sdegler/hyprland 
-dnf5 -y cope enable terjeros/eza 
+dnf5 -y copr enable terjeros/eza 
 dnf5 -y copr enable avengemedia/dms-git 
 dnf5 -y copr enable yalter/niri-git
 dnf5 -y copr enable tofik/nwg-shell
+
+# Steam repo
+dnf5 -y config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-steam.repo
 
 # openrazer install for silverblue
 #  curl -o - https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rpm -E %fedora)/hardware:razer.repo | sudo tee /etc/yum.repos.d/razer.repo
