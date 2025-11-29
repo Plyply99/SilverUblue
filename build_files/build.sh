@@ -15,6 +15,6 @@ dnf5 -y copr enable tofik/nwg-shell
 dnf5 -y install bat bat-extras emacs eza fastfetch ghostty input-remapper mangohud openrazer-daemon rpm-build steam vkBasalt
 
 # Window manager stuff
-dnf5 -y install cliphist hyprland hyprpicker niri swww mako waybar waypaper blueman kdeconnect kf6-kitemmodels network-manager-applet fuzzel nwg-drawer nwg-look mate-polkit
+dnf5 -y install cliphist hyprland hyprpicker niri swww mako waybar waypaper blueman kde-connect kf6-kitemmodels network-manager-applet fuzzel nwg-drawer nwg-look mate-polkit
 
 # Akmod signing stuff for secure boot and openrazer
