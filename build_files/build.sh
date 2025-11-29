@@ -25,7 +25,7 @@ curl -o - https://download.opensuse.org/repositories/hardware:/razer/Fedora_$(rp
 dnf5 -y install openrazer-meta
 
 # Add akmod signing
-git clone https://github.com/CheariX/silverblue-akmods-keys && cd "$(basename "$_" .git)
+git clone https://github.com/CheariX/silverblue-akmods-keys && cd "$(basename "$_" .git)"
 mkdir -p /root/rpmbuild/SOURCES/
 cp \
   macros.kmodtool \
