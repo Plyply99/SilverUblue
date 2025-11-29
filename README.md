@@ -1,3 +1,13 @@
+# Playground to test custom image builds.
+Hyprland and Niri along with needed support packages.
+Check /build_files/build.sh for the package details.
+Everything else based on the Ublue Silverblue:latest image.
+
+
+
+
+
+
 # image-template
 
 This repository is meant to be a template for building your own custom [bootc](https://github.com/bootc-dev/bootc) image. This template is the recommended way to make customizations to any image published by the Universal Blue Project.
