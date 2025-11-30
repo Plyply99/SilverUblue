@@ -21,7 +21,7 @@ dnf5 -y install bat bat-extras emacs eza fastfetch ghostty input-remapper mangoh
 dnf5 -y install cliphist hyprland hyprpicker niri swww mako waybar waypaper blueman kde-connect kf6-kitemmodels network-manager-applet fuzzel nwg-drawer nwg-look mate-polkit mpvpaper
 
 # Custom os-release
-RUN echo PRETTY_NAME="SilverUblue 43"
+echo PRETTY_NAME="SilverUblue 43"
 
 
 # openrazer install for silverblue
