@@ -2,6 +2,10 @@
 
 ### Build file for SilverUblue
 
+# Custom os-release
+RUN echo VARIANT="SilverUblue" && echo VARIANT_ID=https://github.com/Plyply99/SilverUblue
+
+
 # Enable copr repos
 dnf5 -y copr enable cyqsimon/bat-extras 
 dnf5 -y copr enable scottames/ghostty
