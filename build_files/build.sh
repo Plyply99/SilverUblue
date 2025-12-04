@@ -12,7 +12,7 @@ dnf5 -y copr enable yalter/niri-git
 dnf5 -y copr enable tofik/nwg-shell
 
 # Steam repo
-dnf5 -y config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-steam.repo
+#dnf5 -y config-manager addrepo --from-repofile=https://negativo17.org/repos/fedora-steam.repo
 
 # Install extra packages
 dnf5 -y install bat bat-extras emacs eza fastfetch ghostty input-remapper mangohud rpm-build steam vkBasalt #  openrazer-meta
