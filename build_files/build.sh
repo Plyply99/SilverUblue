@@ -18,7 +18,7 @@ dnf5 -y copr enable tofik/nwg-shell
 #dnf5 -y install bat bat-extras emacs eza fastfetch ghostty input-remapper mangohud rpm-build steam vkBasalt #  openrazer-meta
 
 # Install extra packages Bazzite
-dnf5 -y install bat bat-extras emacs eza ghostty gnome-software gnome-software-rpm-ostree
+dnf5 -y install bat bat-extras emacs eza ghostty gnome-software gnome-software-rpm-ostree htop
 dnf5 -y remove bazaar
 
 # Window manager stuff
