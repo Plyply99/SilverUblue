@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ouex pipefail # Fail build on any errors
+
 ### Build file for SilverUblue
 
 # Enable copr repos
