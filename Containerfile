@@ -3,12 +3,13 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM ghcr.io/ublue-os/bazzite-gnome:testing
+FROM ghcr.io/ublue-os/silverblue-main:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/silverblue-main:latest
 # FROM ghcr.io/ublue-os/bazzite:latest
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
+#FROM ghcr.io/ublue-os/bazzite-gnome:testing
 #
 # ... and so on, here are more base images
 # Universal Blue Images: https://github.com/orgs/ublue-os/packages
