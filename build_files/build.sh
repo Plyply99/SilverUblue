@@ -22,5 +22,5 @@ dnf5 -y install bat bat-extras emacs eza ghostty gnome-software gnome-software-r
 dnf5 -y remove bazaar
 
 # Window manager stuff
-dnf5 -y install cliphist hyprland hyprpicker niri swww mako waybar waypaper blueman kde-connect kf6-kitemmodels network-manager-applet fuzzel nwg-drawer nwg-look mate-polkit mpvpaper
+dnf5 -y install cliphist hyprland hyprland-guiutils hyprpicker niri swww mako waybar waypaper blueman kde-connect kf6-kitemmodels network-manager-applet fuzzel nwg-drawer nwg-look mate-polkit mpvpaper
 
